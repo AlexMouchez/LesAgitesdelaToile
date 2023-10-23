@@ -53,12 +53,15 @@ footer {
 
     
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
     background-color: #2F3640;
-
+a{
+    width: 33%;
     figure {
-        width: 33%;
+        width: 90%;
+        height: 100%;
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
@@ -69,6 +72,8 @@ footer {
             width: 100%;
         }
     }
+}
+ 
 }
 
 footer {
@@ -99,40 +104,113 @@ a {
     color: black;
 }
 
-form{
-    width: 100%;
+
+#startForm{
     background-color: #F2C84B;
-    margin-left: 20%;
-}
-.startForm{
-    background-color: #F2C84B;
-    .nT{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: #F2C84B;
-        #NomP{
-            display: flex;
-            flex-wrap: wrap;
-            width: 50%;
-            div{
-                width: 100%;
-                margin: 10px;
-            }
-        }
+   width: 100%;
+
+   #firstPart{
+
+    flex-wrap: nowrap;
         #text{
             width: 50%;
+            
         }
+    
+    #nomP{
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        div:nth-child(2){
+       
+            margin-top: 30px;
+        }
+        
+    }
+    div{
+       
+        margin-top: 10px;
+    }
+}
+#secondePart{
+    margin-left: 23%;
+}
+button{
+    margin-left: 43%;
+}
+}
+
+
+#last {
+    margin-bottom: 50px;
+}
+
+#grande{
+    background-color: #F2C84B;
+    margin-bottom: 80px;
+}
+
+
+
+#tilimg{
+    margin-top: 100px;
+    background-color: #F2C84B;
+    width: 110%;
+    margin-left:-15px;
+    #til{
+        margin: 20px;
+        flex-wrap: wrap;
+       
+        width: 80%;
+        .titre, .infoListe{
+
+            border: 10px;
+            margin: 20px;
+            background-color: #7587BF;
+        }
+        .titre{
+            width: 100%;
+            text-align: center;
+        }
+
+        #il{
+            width: 100%;
+            flex-wrap: wrap;
+            .infoListe{
+                width: 45%;
+            }
+        }
+        
+
+
+    }
+
+    
+    #img{
+        width: 20%;
+        margin: 10px;
+    }
+}
+.zoneTexte{
+
+    border: 10px;
+    margin: 20px;
+    background-color: #7587BF;
+}
+#imgSS{
+    background-color: #F2C84B;
+    #imgS{
+   
+       
+        padding-top: 80px;
+        background-color: #F2C84B;
     }
 }
 
 
 
-
-
-
-
 @media screen and (max-width: 993px)and (min-width: 576px) {
+  
     li {
         display: none;
     }
@@ -153,22 +231,45 @@ form{
         margin-top: 0;
     }
 
-   #affiche figure {
+   #affiche a {
         width: 50%;
     }
+
+    
+#tilimg{
+    margin-top: 100px;
+    background-color: #F2C84B;
+    width: 100%;
+    margin-left:-5px;
+    #il{
+        width: 100%;
+        .infoListe{
+            width: 100%;
+        }
+    }
+}
+#imgS{
+    display: none;
+  
+}
 }
 
-#last {
-    margin-bottom: 50px;
-}
 
 @media screen and (min-width: 994px) {
+    #imgS{
+        display: none;
+    }
+
     #tabMenu {
         display: none;
     }
 }
 
 @media screen and (max-width: 575px) {
+
+    #tilimg{
+        margin-top: 0px;
+    }
     #tabMenu {
         display: none;
     }
@@ -179,8 +280,46 @@ form{
         }
     }
 
-    #affiche figure {
-        width: 55%;
+    #affiche a {
+        width: 75%;
     }
+    #startForm{
+        background-color: #F2C84B;
+       width: 100%;
+    
+       #firstPart{
+    
+        flex-wrap: wrap;
+            #text{
+                width: 100%;
+                
+            }
+        
+        #nomP{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            div:nth-child(2){
+           
+                margin-top: 30px;
+            }
+            
+        }
+        div{
+           
+            margin-top: 10px;
+        }
+    }
+    #secondePart{
+        margin-left: 23%;
+    }
+    button{
+        margin-left: 43%;
+    }
+    }
+#img{
+    display: none;
+}
+
 
 }

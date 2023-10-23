@@ -41,18 +41,18 @@
     </nav>
     <div id="tabMenu">
         <p><a href="index.html">Accueil</a></p>
-        <p>Galerie </p>
-        <p>Nous contacter</p>
+        <p><a href="galerie.html">Galerie </a></p>
+        <p><a href="contact.html">Nous contacter</a></p>
 
     </div>
 
     <h1 id="galerieTopLine" class="text-center">Nous contacter</h1>
 
 
-    <form class="container-fluid justify-content-center" id="startForm">
+    <form class="container-fluid justify-content-center flex-row" id="startForm">
 
-        <div class="nT offset-4">
-            <div class="container d-flex  justify-content-left " id="NomP">
+        <div class="container d-flex  " id="firstPart">
+            <div class="container d-flex   flex-column " id="nomP">
                 <div>
 
                     <input type="text" class="form-control" id="inputEmail4" placeholder="Nom">
@@ -66,31 +66,35 @@
             <div class="container d-flex  " id="text">
                 <div>
 
-                    <p class="text-danger"><textarea class="form-control" id="bio" rows="3"
-                            placeholder="Ton message"></textarea></p>
+                    <textarea rows="6" cols="50">Ton message</textarea>
                 </div>
             </div>
         </div>
-        <h5>combien font 5+5 ?</h5>
-        <div class=" radio d-flex">
-            <div class="custom-control custom-radio mr-5">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio1">10</label>
-            </div>
-            <div class="custom-control custom-radio mr-5">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio2">11</label>
-            </div>
-            <div class="custom-control custom-radio mr-5">
-                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio3">8</label>
-            </div>
-        </div>
 
 
-        <div class="container d-flex mt-2 ml-2 justify-content-center">
-            <button type="submit" class="btn btn-danger mr-1">Envoyer</button>
+
+
+        <div class="container justify-content-center " id="secondePart">
+            <h5>combien font 5+5 ?</h5>
+            <div class=" radio d-flex">
+                <div class="custom-control custom-radio mr-5">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">10</label>
+                </div>
+                <div class="custom-control custom-radio mr-5">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">11</label>
+                </div>
+                <div class="custom-control custom-radio mr-5">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">8</label>
+                </div>
+            </div>
         </div>
+        
+        
+            <button type="submit" class="btn btn-danger">Envoyer</button>
+      
     </form>
 
     <footer class="text-center fixed-bottom ">
