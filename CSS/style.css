@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../img/RobotoMono-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "incon";
+  src: url("../img/Inconsolata-ExtraBold.ttf");
+}
+html,
+body {
+  background-color: #F2C84B;
+}
+
+h1 {
+  font-family: incon;
+}
+
+p,
+h3,
+h2 {
+  font-family: roboto;
+}
+
+nav,
+footer {
+  display: flex;
+  background-color: #2F3640;
+}
+nav *,
+nav a,
+footer *,
+footer a {
+  color: #F2E205;
+}
+
+#logo {
+  margin-top: 15em;
+  margin-bottom: 10em;
+  background-color: #0D0D0D;
+  border-color: #F2E205;
+  color: #F2E205;
+}
+#logo figcaption {
+  width: 100%;
+  text-align: center;
+}
+
+#affiche {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #2F3640;
+}
+#affiche figure {
+  width: 33%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2F3640;
+  color: #F2E205;
+}
+#affiche figure img {
+  width: 100%;
+}
+
+footer {
+  line-height: 0;
+}
+
+#galerieTopLine {
+  padding-top: 100px;
+  background-color: #F2C84B;
+}
+
+.card {
+  box-shadow: 10px 0px 5px black;
+}
+
+#affiche {
+  background-color: #F2C84B;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  width: 100%;
+  background-color: #F2C84B;
+  margin-left: 20%;
+}
+
+.startForm {
+  background-color: #F2C84B;
+}
+.startForm .nT {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F2C84B;
+}
+.startForm .nT #NomP {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.startForm .nT #NomP div {
+  width: 100%;
+  margin: 10px;
+}
+.startForm .nT #text {
+  width: 50%;
+}
+
+@media screen and (max-width: 993px) and (min-width: 576px) {
+  li {
+    display: none;
+  }
+  #tabMenu {
+    display: flex;
+    justify-content: end;
+    margin-top: 80px;
+    background-color: #F2C84B;
+  }
+  #tabMenu p {
+    margin: 20px;
+  }
+  #logo {
+    margin-top: 0;
+  }
+  #affiche figure {
+    width: 50%;
+  }
+}
+#last {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 994px) {
+  #tabMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  #tabMenu {
+    display: none;
+  }
+  nav h1 {
+    font-size: 27px;
+  }
+  #affiche figure {
+    width: 55%;
+  }
+}/*# sourceMappingURL=style.css.map */
